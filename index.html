@@ -143,6 +143,45 @@ footer .wrap{
   display:flex;
   justify-content:space-between;
 }
+  .blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:60px;
+  margin-top:80px;
+}
+
+.blog-item{
+  border-top:2px solid #222;
+  padding-top:32px;
+}
+
+.blog-item span{
+  color:var(--primary);
+  font-size:12px;
+  letter-spacing:1px;
+}
+
+.blog-item h3{
+  font-size:22px;
+  margin:16px 0;
+}
+
+.blog-item p{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.6;
+}
+
+.blog-item a{
+  display:inline-block;
+  margin-top:24px;
+  color:#fff;
+  text-decoration:none;
+  border-bottom:1px solid var(--primary);
+  font-size:13px;
+  letter-spacing:.5px;
+}
+
 </style>
 </head>
 <body>
@@ -207,6 +246,50 @@ footer .wrap{
   <div class="wrap">
     <h2>Designed to Scale.<br><span class="accent">Built to Last.</span></h2>
     <a href="#" class="btn">REQUEST EXECUTIVE BRIEFING</a>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Insights & Perspective</h2>
+    <p class="lead">
+      Pemikiran dan pendekatan kami terhadap
+      sistem inventory, kontrol operasional,
+      dan manajemen skala perusahaan.
+    </p>
+
+    <div class="blog-grid">
+
+      <div class="blog-item">
+        <span>INSIGHT</span>
+        <h3>Why Inventory Control Is a Strategic Decision</h3>
+        <p>
+          Pengelolaan stok bukan sekadar pencatatan barang,
+          tetapi fondasi stabilitas operasional jangka panjang.
+        </p>
+        <a href="#">Read Article</a>
+      </div>
+
+      <div class="blog-item">
+        <span>PERSPECTIVE</span>
+        <h3>Invisible Losses in Poor Stock Governance</h3>
+        <p>
+          Banyak kerugian operasional tidak terlihat di laporan,
+          tetapi tumbuh dari sistem inventory yang lemah.
+        </p>
+        <a href="#">Read Article</a>
+      </div>
+
+      <div class="blog-item">
+        <span>OPERATIONAL</span>
+        <h3>Discipline as Competitive Advantage</h3>
+        <p>
+          Perusahaan yang bertahan lama selalu memiliki satu kesamaan:
+          disiplin proses yang konsisten.
+        </p>
+        <a href="#">Read Article</a>
+      </div>
+
+    </div>
   </div>
 </section>
 
