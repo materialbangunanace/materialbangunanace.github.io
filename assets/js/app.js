@@ -28,8 +28,7 @@ wrap.innerHTML = MATERIAL_DATA.map((m, i) => `
 <h4>${m.name}</h4>
 <p class=\"price\">Rp ${m.priceMin.toLocaleString()} - Rp ${m.priceMax.toLocaleString()}</p>
 </div>
-`).join("
-");
+`).join(" ");
 
 
 $("#materials-list .item").on("click", function () {
