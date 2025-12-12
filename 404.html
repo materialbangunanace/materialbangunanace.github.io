@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Page Not Found | MBAce</title>
+<style>
+:root{
+  --primary:#de1339;
+  --dark:#0b0b0b;
+  --soft:#151515;
+  --panel:#121212;
+  --text:#e6e6e6;
+  --muted:#8f8f8f;
+  --border:#232323;
+  --radius:10px;
+  --max:900px;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  height:100vh;
+  background:var(--dark);
+  display:flex;
+  flex-direction:column;
+  font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto, sans-serif;
+  color:var(--text);
+}
+
+/* Navbar ringkas */
+nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:24px 28px;
+  border-bottom:1px solid var(--border);
+}
+.logo{
+  font-weight:600;
+  letter-spacing:2px;
+  color:#ccc;
+  font-size:14px;
+}
+nav a{
+  text-decoration:none;
+  color:var(--muted);
+  font-size:13px;
+  margin-left:18px;
+}
+nav a:hover{color:#fff}
+
+/* Main */
+main{
+  flex:1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+.box{
+  max-width:var(--max);
+  text-align:center;
+  padding:48px 32px;
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:0 6px 20px rgba(0,0,0,0.45);
+}
+
+h1{
+  font-size:80px;
+  margin:0;
+  font-weight:700;
+  color:var(--primary);
+}
+h2{
+  font-size:26px;
+  margin:10px 0 14px;
+  font-weight:600;
+}
+p{
+  color:var(--muted);
+  margin:0 0 28px;
+  font-size:15px;
+}
+
+/* Buttons */
+.btn{
+  display:inline-block;
+  padding:12px 22px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+  border:1px solid rgba(255,255,255,0.06);
+}
+.btn-primary{
+  background:var(--primary);
+  color:#fff;
+  border-color:var(--primary);
+}
+.btn-ghost{
+  background:transparent;
+  color:var(--muted);
+  border:1px solid #2a2a2a;
+  margin-left:10px;
+}
+.btn-ghost:hover{color:#fff}
+
+/* small info */
+.tip{
+  margin-top:26px;
+  color:var(--muted);
+  font-size:13px;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">MBAce</div>
+  <div>
+    <a href="/index.html">Home</a>
+    <a href="/p/contact.html">Contact</a>
+    <a href="/p/privacy-policy.html">Privacy Policy</a>
+  </div>
+</nav>
+
+<main>
+  <div class="box">
+    <h1>404</h1>
+    <h2>Page Not Found</h2>
+    <p>The page you are looking for may have been moved, renamed, or no longer exists.</p>
+
+    <a href="/index.html" class="btn btn-primary">Back to Homepage</a>
+    <a href="/p/contact.html" class="btn btn-ghost">Contact Support</a>
+
+    <div class="tip">
+      If you believe this is a mistake, let us know — we respond within 1–2 business days.
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
