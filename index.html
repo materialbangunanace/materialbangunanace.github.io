@@ -181,6 +181,60 @@ footer .wrap{
   font-size:13px;
   letter-spacing:.5px;
 }
+/* MATERIAL SECTION */
+#materials {
+    padding: 70px 20px;
+    background: #0e0e0e;
+    border-top: 1px solid #1e1e1e;
+}
+
+#materials h2 {
+    color: #fff;
+    font-size: 30px;
+    margin: 0 0 10px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+
+#materials p.section-desc {
+    color: #8f8f8f;
+    margin: 0 0 40px;
+    font-size: 15px;
+}
+
+.material-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.material-item {
+    background: #141414;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+    transition: .2s;
+}
+
+.material-item:hover {
+    transform: translateY(-4px);
+    border-color: #2a2a2a;
+}
+
+.material-item .name {
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.material-item .price {
+    font-weight: 600;
+    color: #de1339;
+}
 
 </style>
 </head>
@@ -210,119 +264,59 @@ footer .wrap{
   </div>
 </section>
 
-  <section id="materials" style="padding:70px 20px; background:#0e0e0e; border-top:1px solid #1e1e1e;">
-  <div style="max-width:1100px; margin:auto;">
-
-    <h2 style="
-      color:#fff;
-      font-size:30px;
-      margin:0 0 10px;
-      font-weight:700;
-      letter-spacing:0.5px;
-    ">Material Tersedia</h2>
-
-    <p style="color:#8f8f8f; margin:0 0 40px; font-size:15px;">
+  <section id="materials">
+  <div class="material-grid-wrapper">
+    <h2>Material Tersedia</h2>
+    <p class="section-desc">
       Ketersediaan material untuk kebutuhan konstruksi dan renovasi — harga transparan, update rutin setiap minggu.
     </p>
 
-    <div style="
-      display:grid;
-      grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
-      gap:22px;
-    ">
+    <div class="material-grid">
 
-      <!-- CARD ITEM -->
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Semen Portland 50Kg</div>
-        <div style="color:#de1339; font-weight:600;">55k – 70k / karung</div>
+      <div class="material-item">
+        <div class="name">Semen Portland 50Kg</div>
+        <div class="price">Rp 55.000 – Rp 70.000,- / karung</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Pasir Cor</div>
-        <div style="color:#de1339; font-weight:600;">180k – 250k / m³</div>
+      <div class="material-item">
+        <div class="name">Pasir Cor</div>
+        <div class="price">Rp 180.000 – Rp 250.000,- / m³</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Bata Merah</div>
-        <div style="color:#de1339; font-weight:600;">550k – 800k / 1000 pcs</div>
+      <div class="material-item">
+        <div class="name">Bata Merah</div>
+        <div class="price">Rp 550.000 – Rp 800.000,- / 1000 pcs</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Bata Ringan</div>
-        <div style="color:#de1339; font-weight:600;">800k – 1.1M / m³</div>
+      <div class="material-item">
+        <div class="name">Bata Ringan</div>
+        <div class="price">Rp 800.000 – Rp 1.100.000,- / m³</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Cat Tembok Interior 5L</div>
-        <div style="color:#de1339; font-weight:600;">120k – 250k / 5 kaleng</div>
+      <div class="material-item">
+        <div class="name">Cat Tembok Interior 5L</div>
+        <div class="price">Rp 120.000 – Rp 250.000,- / 5 kaleng</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Pipa PVC 3/4"</div>
-        <div style="color:#de1339; font-weight:600;">25k – 40k</div>
+      <div class="material-item">
+        <div class="name">Pipa PVC 3/4"</div>
+        <div class="price">Rp 25.000 – Rp 40.000,-</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Triplek 9mm</div>
-        <div style="color:#de1339; font-weight:600;">95k – 130k / lembar</div>
+      <div class="material-item">
+        <div class="name">Triplek 9mm</div>
+        <div class="price">Rp 95.000 – Rp 130.000,- / lembar</div>
       </div>
 
-      <div style="
-        background:#141414;
-        padding:22px;
-        border-radius:12px;
-        border:1px solid #1f1f1f;
-        box-shadow:0 4px 14px rgba(0,0,0,0.35);
-      ">
-        <div style="font-size:17px; font-weight:600; margin-bottom:6px;">Kabel NYA 1.5mm</div>
-        <div style="color:#de1339; font-weight:600;">180k – 260k / roll (50m)</div>
+      <div class="material-item">
+        <div class="name">Kabel NYA 1.5mm</div>
+        <div class="price">Rp 180.000 – Rp 260.000,- / roll (50m)</div>
       </div>
 
     </div>
   </div>
 </section>
+
 
 
   
