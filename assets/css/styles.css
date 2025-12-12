@@ -1,0 +1,54 @@
+:root {
+h1 {
+margin: 0;
+font-size: 20px;
+font-weight: 600;
+}
+
+
+#nav-menu a {
+color: var(--text);
+text-decoration: none;
+margin-left: 16px;
+font-size: 15px;
+padding: 8px 12px;
+border-radius: var(--radius);
+transition: 0.2s;
+}
+
+
+#nav-menu a:hover {
+background: var(--primary);
+}
+
+
+.hero {
+padding: 60px var(--padding);
+}
+
+
+.btn {
+display: inline-block;
+margin-top: 20px;
+padding: 12px 20px;
+background: var(--primary);
+color: white;
+border-radius: var(--radius);
+text-decoration: none;
+transition: 0.2s;
+}
+
+
+.btn:hover {
+background: var(--primary-hover);
+}
+
+
+footer {
+margin-top: 40px;
+padding: var(--padding);
+background: var(--surface);
+border-top: 1px solid var(--border);
+font-size: 14px;
+line-height: 1.5;
+}
