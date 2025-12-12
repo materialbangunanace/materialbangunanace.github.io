@@ -1,4 +1,33 @@
-:root {
+* {
+--bg: #0d0f12;
+--surface: #161a1f;
+--text: #e7edf4;
+--primary: #1e88e5; 
+--primary-hover: #42a5f5;
+--radius: 14px;
+--padding: 18px;
+--border: #2c3238;
+}
+
+
+body {
+margin: 0;
+font-family: "Inter", sans-serif;
+background: var(--bg);
+color: var(--text);
+}
+
+
+header {
+background: var(--surface);
+padding: var(--padding);
+border-bottom: 1px solid var(--border);
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
 h1 {
 margin: 0;
 font-size: 20px;
@@ -50,5 +79,4 @@ padding: var(--padding);
 background: var(--surface);
 border-top: 1px solid var(--border);
 font-size: 14px;
-line-height: 1.5;
 }
