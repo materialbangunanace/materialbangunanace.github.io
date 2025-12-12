@@ -65,9 +65,7 @@ const nav = document.getElementById("nav-menu");
 if (!nav) return;
 
 
-nav.innerHTML = NAV_DATA.map(item => `
-<a href="${item.link}">${item.name}</a>
-`).join("\n");
+nav.innerHTML = NAV_DATA.map(item => `<a href="${item.link}">${item.name}</a>`).join("\n");
 }
 
 
