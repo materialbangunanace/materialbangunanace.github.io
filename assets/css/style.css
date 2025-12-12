@@ -7,16 +7,19 @@
 --radius: 14px;
 --padding: 18px;
 --border: #2c3238;
+  --fonts: "Commissioner", sans-serif, serif;
 }
 
 
 body {
 margin: 0;
-font-family: "Inter", sans-serif;
+font-family: var(--fonts);
 background: var(--bg);
 color: var(--text);
 }
-
+input, button, textarea {
+font-family: var(--fonts);
+}
 
 header {
 background: var(--surface);
