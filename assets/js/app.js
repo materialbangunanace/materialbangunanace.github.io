@@ -11,8 +11,7 @@ const NAV_DATA = [
 function loadNavigation() {
 const nav = document.getElementById("nav-menu");
 if (!nav) return;
-nav.innerHTML = NAV_DATA.map(item => `<a href="${item.link}">${item.name}</a>`).join("
-");
+nav.innerHTML = NAV_DATA.map(item => `<a href="${item.link}">${item.name}</a>`).join(" ");
 }
 
 
