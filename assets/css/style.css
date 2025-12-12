@@ -2,12 +2,12 @@
 --bg: #0d0f12;
 --surface: #161a1f;
 --text: #e7edf4;
---primary: #1e88e5; 
+--primary: #1e88e5;
 --primary-hover: #42a5f5;
 --radius: 14px;
 --padding: 18px;
 --border: #2c3238;
-  --fonts: "Commissioner", sans-serif, serif;
+--fonts: "Commissioner", sans-serif, serif;
 }
 
 
@@ -20,6 +20,7 @@ color: var(--text);
 input, button, textarea {
 font-family: var(--fonts);
 }
+
 
 header {
 background: var(--surface);
@@ -69,17 +70,4 @@ border-radius: var(--radius);
 text-decoration: none;
 transition: 0.2s;
 }
-
-
-.btn:hover {
-background: var(--primary-hover);
-}
-
-
-footer {
-margin-top: 40px;
-padding: var(--padding);
-background: var(--surface);
-border-top: 1px solid var(--border);
-font-size: 14px;
 }
