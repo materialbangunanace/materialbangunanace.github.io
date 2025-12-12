@@ -1,9 +1,7 @@
 const NAV_DATA = [
-{ name: "Beranda", link: "index.html" },
-{ name: "Katalog", link: "katalog.html" },
-{ name: "Estimasi", link: "estimasi.html" },
-{ name: "Daftar Belanja", link: "belanja.html" },
-{ name: "Kontak", link: "kontak.html" }
+{ name: "Beranda", link: "\/index.html" },
+{ name: "Kontak", link: "\/p\/contact.html" },
+{ name: "Privacy Policy", link: "\/p\/privacy-policy.html" }
 ];
 
 
