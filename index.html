@@ -1,41 +1,303 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Material Bangunan Ace</title>
-<link href="https://fonts.googleapis.com/css?family=Commissioner:300,400,500,600,700|Material+Symbols+Outlined&display=swap" media="all" rel="stylesheet" />
-<link rel="stylesheet" href="/assets/css/style.css" />
+<meta charset="UTF-8">
+<title>Material Inventory – Executive System</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+:root{
+  --primary:#de1339;
+  --dark:#0b0b0b;
+  --soft:#161616;
+  --text:#e6e6e6;
+  --muted:#8a8a8a;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--dark);
+  color:var(--text);
+  font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+}
+
+nav{
+  max-width:1400px;
+  margin:auto;
+  padding:32px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-weight:600;
+  letter-spacing:2px;
+  font-size:14px;
+}
+
+.menu a{
+  margin-left:36px;
+  color:var(--muted);
+  text-decoration:none;
+  font-size:14px;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+}
+
+.hero .wrap{
+  max-width:1400px;
+  margin:auto;
+  padding:0 32px;
+}
+
+.hero h1{
+  font-size:64px;
+  max-width:900px;
+  line-height:1.1;
+}
+
+.hero span{
+  color:var(--primary);
+}
+
+.hero p{
+  max-width:640px;
+  margin-top:32px;
+  font-size:18px;
+  color:var(--muted);
+}
+
+.btn{
+  display:inline-block;
+  margin-top:56px;
+  padding:18px 42px;
+  border:1px solid var(--primary);
+  color:#fff;
+  text-decoration:none;
+  letter-spacing:1px;
+  font-size:13px;
+}
+
+section{
+  padding:160px 32px;
+}
+
+.wrap{
+  max-width:1400px;
+  margin:auto;
+}
+
+.split{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:100px;
+}
+
+h2{
+  font-size:42px;
+  line-height:1.2;
+}
+
+.lead{
+  font-size:18px;
+  color:var(--muted);
+  margin-top:24px;
+}
+
+.list{
+  margin-top:60px;
+}
+
+.list div{
+  font-size:18px;
+  padding:18px 0;
+  border-bottom:1px solid #222;
+}
+
+.accent{
+  color:var(--primary);
+}
+
+.cta{
+  background:var(--soft);
+  text-align:center;
+}
+
+.cta h2{
+  font-size:48px;
+}
+
+footer{
+  padding:80px 32px;
+  color:#666;
+  font-size:14px;
+}
+footer .wrap{
+  display:flex;
+  justify-content:space-between;
+}
+  .blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:60px;
+  margin-top:80px;
+}
+
+.blog-item{
+  border-top:2px solid #222;
+  padding-top:32px;
+}
+
+.blog-item span{
+  color:var(--primary);
+  font-size:12px;
+  letter-spacing:1px;
+}
+
+.blog-item h3{
+  font-size:22px;
+  margin:16px 0;
+}
+
+.blog-item p{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.6;
+}
+
+.blog-item a{
+  display:inline-block;
+  margin-top:24px;
+  color:#fff;
+  text-decoration:none;
+  border-bottom:1px solid var(--primary);
+  font-size:13px;
+  letter-spacing:.5px;
+}
+
+</style>
 </head>
 <body>
-<header>
-<h1>Material Bangunan Ace</h1>
-<nav id="nav-menu"></nav>
-</header>
 
+<nav>
+  <div class="logo">MBAce</div>
+  <div class="menu">
+    <a href="/p/contact.html">Contact</a>
+    <a href="/p/privacy-policy.html">Privacy Policy</a>
+  </div>
+</nav>
 
-<main>
 <section class="hero">
-<h2>Katalog & Estimasi Material Bangunan</h2>
-<p>Aplikasi katalog material, estimasi kebutuhan, daftar belanja, dan langsung chat via WhatsApp.</p>
-<a class="btn" href="https://wa.me/6285709073973" target="_blank">Hubungi via WhatsApp</a>
+  <div class="wrap">
+    <h1>
+      Material Inventory System<br>
+      <span>Built for Control</span>
+    </h1>
+    <p>
+      Enterprise-grade inventory management designed
+      for companies that treat operations as strategy.
+    </p>
+    <a href="#" class="btn">Get on Play Store</a>
+  </div>
 </section>
 
-
-<section class="materials">
-<h3>Daftar Material Tersedia</h3>
-<div id="materials-list" class="material-grid"></div>
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>Not a Tool.<br>An Operational System.</h2>
+      <p class="lead">
+        Kami membangun sistem untuk bisnis
+        yang menuntut stabilitas, disiplin proses,
+        dan keputusan berbasis data.
+      </p>
+    </div>
+    <div class="list">
+      <div>Operational Transparency</div>
+      <div>Risk Reduction</div>
+      <div>Process Accountability</div>
+      <div>Decision-Grade Data</div>
+    </div>
+  </div>
 </section>
-</main>
 
+<section>
+  <div class="wrap split">
+    <div>
+      <h2>Enterprise Capability</h2>
+    </div>
+    <div class="list">
+      <div>Inventory Governance</div>
+      <div>Material Flow Intelligence</div>
+      <div>Threshold & Compliance Control</div>
+      <div>Executive Reporting</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Designed to Scale.<br><span class="accent">Built to Last.</span></h2>
+    <a href="#" class="btn">REQUEST EXECUTIVE BRIEFING</a>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <h2>Insights & Perspective</h2>
+    <p class="lead">
+      Pemikiran dan pendekatan kami terhadap
+      sistem inventory, kontrol operasional,
+      dan manajemen skala perusahaan.
+    </p>
+
+    <div class="blog-grid">
+
+      <div class="blog-item">
+        <span>INSIGHT</span>
+        <h3>Why Inventory Control Is a Strategic Decision</h3>
+        <p>
+          Pengelolaan stok bukan sekadar pencatatan barang,
+          tetapi fondasi stabilitas operasional jangka panjang.
+        </p>
+        <a href="/blog/inventory-control-sebagai-keputusan-strategis.html">Read Article</a>
+      </div>
+
+      <div class="blog-item">
+        <span>PERSPECTIVE</span>
+        <h3>Invisible Losses in Poor Stock Governance</h3>
+        <p>
+          Banyak kerugian operasional tidak terlihat di laporan,
+          tetapi tumbuh dari sistem inventory yang lemah.
+        </p>
+        <a href="/blog/invisible-losses-in-poor-stock-governance.html">Read Article</a>
+      </div>
+
+      <div class="blog-item">
+        <span>OPERATIONAL</span>
+        <h3>Discipline as Competitive Advantage</h3>
+        <p>
+          Perusahaan yang bertahan lama selalu memiliki satu kesamaan:
+          disiplin proses yang konsisten.
+        </p>
+        <a href="/blog/discipline-as-competitive-advantage.html">Read Article</a>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <footer>
-<p>Material Bangunan Ace — Kp Sindang Palay, Kab Bandung (40252)</p>
-<p>Telp/WA: +62 857-0907-3973 — Email: materialbangunanace01@gmail.com</p>
-<p>Jam Buka: 08.00 - 17.00 (Minggu Libur)</p>
+  <div class="wrap">
+    <div>© 2025 Material Bangunan Ace</div>
+    <div>materialbangunanace01@gmail.com / +6857-0907-3973</div>
+  </div>
 </footer>
 
-
-<script src="/assets/js/app.js"></script>
 </body>
 </html>
